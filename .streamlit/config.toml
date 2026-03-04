@@ -1,0 +1,13 @@
+# Streamlit Configuration
+
+[server]
+# Use default settings for localhost access
+port = 8501
+headless = true
+
+[theme]
+primaryColor = "#00e5ff"
+backgroundColor = "#080d18"
+secondaryBackgroundColor = "#0b1120"
+textColor = "#e2e8f0"
+font = "monospace"
