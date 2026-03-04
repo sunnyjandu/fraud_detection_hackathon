@@ -122,7 +122,7 @@ div[data-testid="stAlert"]  { margin:8px 0 14px; }
 
 
 # Path to the fraud dataset (must be relative to where you run the app)
-DATA_PATH = r"data\processed\dashboard.csv"
+DATA_PATH = r".\data\processed\dashboard.csv"
 
 # This function uses @st.cache_data to load the data only once
 # It remembers the data so reloads are instant (faster dashboard)
@@ -148,7 +148,7 @@ try:
 except FileNotFoundError:
     st.error(
         f"⚠️  Dataset not found at **{DATA_PATH}**.\n\n"
-        "Make sure `fraud_dashboard_dataset.csv` lives at `data/processed/` "
+        "Make sure `dashboard.csv` lives at `data/processed/` "
         "relative to where you run the app."
     )
     st.stop()  # Stop the app if data is missing
